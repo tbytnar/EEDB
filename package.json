@@ -4,17 +4,17 @@
   "description": "A database application for Eve Echoes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
   "author": "Tim Bytnar",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.1.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  },
-  "scripts": {
-    "dev": "nodemon server.js &"
   }
 }
