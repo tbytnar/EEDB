@@ -1,0 +1,56 @@
+
+{{!-- <form action="/planet_resources" method="POST">
+    <input type="text" placeholder="constellation" name="constellation" />
+    <input type="text" placeholder="region" name="region" />
+    <input type="text" placeholder="solarsystem" name="solarsystem" />
+    <input type="text" placeholder="seclevel" name="seclevel" />
+    <input type="text" placeholder="planet" name="planet" />
+    <input type="text" placeholder="planettype" name="planettype" />
+    <input type="text" placeholder="material" name="material" />
+    <input type="text" placeholder="grade" name="material" />
+    <input type="text" placeholder="hrlyoutput" name="hrlyoutput" />
+    <input type="text" placeholder="efficiency" name="efficiency" />
+    <input type="text" placeholder="tempsensitivity" name="tempsensitivity" />
+    <input type="text" placeholder="seclevelmodifer" name="seclevelmodifer" />
+    <button type="submit">Submit</button>
+</form> --}}
+<h2> Planetary Resources </h2>
+<ul class="planet_resources">
+    <table id="datatable" class="table table-striped table-inverse table-responsive">
+        <thead class="thead-inverse">
+            <tr>
+                <th>Constellation</th>
+                <th>Region</th>
+                <th>Solar System</th>
+                <th>Security Level</th>
+                <th>Planet</th>
+                <th>Planet Type</th>
+                <th>Material</th>
+                <th>Grade</th>
+                <th>Output/hr</th>
+                <th>Efficiency</th>
+                <th>Temp. Sensitivity</th>
+                <th>Modifier (Sec. Level)</th>
+            </tr>
+            </thead>
+            <tbody>
+                <!-- Loop through quotes -->
+                {{#each planet_resources}}
+                <tr>
+                    <td scope="row">{{this.constellation}}</td>
+                    <td>{{this.region}}</td>
+                    <td>{{this.solarsystem}}</td>
+                    <td>{{this.seclevel}}</td>
+                    <td>{{this.planet}}</td>
+                    <td>{{this.planettype}}</td>
+                    <td>{{this.material}}</td>
+                    <td>{{this.grade}}</td>
+                    <td>{{this.hrlyoutput}}</td>
+                    <td>{{this.efficiency}}</td>
+                    <td>{{this.tempsensitivity}}</td>
+                    <td>{{this.seclevelmodifer}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+    </table>
+</ul>

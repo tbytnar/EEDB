@@ -1,6 +1,11 @@
-app.use(express.static('public'))
+//app.use(express.static('public'))
 
-const update = document.querySelector('#update-button')
+$(document).ready(function() {
+    $('#datatable').DataTable();
+} );
+
+
+/* const update = document.querySelector('#update-button')
 
 update.addEventListener('click', _ => {
     fetch('/quotes', {
@@ -11,4 +16,4 @@ update.addEventListener('click', _ => {
             quote: 'I find your lack of faith disturbing.'
           })
     })
-})
+}) */
